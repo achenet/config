@@ -93,4 +93,8 @@ function steeef_precmd {
 }
 add-zsh-hook precmd steeef_precmd
 
-PROMPT=$'%{$purple%}%D{%a %d %b}%{$reset_color%} %T %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%}\nλ%{$reset_color%}%{$white%}%{$reset_color%} '
+
+
+   ZSH_THEME_CLOUD_PREFIX='☁'
+
+PROMPT=$'%{$turquoise%}☁ %{$reset_color%}%{$purple%}%D{%a %d %b}%{$reset_color%} %T %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%}\nλ%{$reset_color%}%{$white%}%{$reset_color%} '
